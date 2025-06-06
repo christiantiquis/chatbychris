@@ -26,7 +26,7 @@ const HomeView = () => {
           authClient.signOut({
             fetchOptions: {
               onSuccess: () => {
-                router.push("sign-in");
+                router.push("/sign-in");
               },
             },
           })
