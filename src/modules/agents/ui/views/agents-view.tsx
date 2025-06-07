@@ -1,5 +1,6 @@
 "use client";
 
+import { ErrorState } from "@/components/alert-state";
 import { LoadingState } from "@/components/loading-state";
 import { useTRPC } from "@/trpc/client";
 import { useSuspenseQuery } from "@tanstack/react-query";
@@ -22,9 +23,9 @@ export const AgentsViewLoading = () => {
 
 export const AgentsViewError = () => {
   return (
-    <LoadingState
-      title="Loading Agents"
-      description="This may take a few seconds"
+    <ErrorState
+      title="Error Loading Agents"
+      description="Please try again later"
     />
   );
 };
