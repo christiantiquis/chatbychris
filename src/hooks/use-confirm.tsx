@@ -17,6 +17,7 @@ export const useConfirm = (
   };
 
   const handleClose = () => {
+    promise?.resolve(false);
     setPromise(null);
   };
 
