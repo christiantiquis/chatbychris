@@ -1,5 +1,5 @@
 import { useTRPC } from "@/trpc/client";
-import { MeetingGetOne } from "../../../agents/types";
+import { MeetingGetOne } from "../../types";
 import { useMutation, useQuery, useQueryClient } from "@tanstack/react-query";
 import { meetingsInsertSchema } from "../../schemas";
 import { zodResolver } from "@hookform/resolvers/zod";
