@@ -1,7 +1,7 @@
 import { DEFAULT_PAGE } from "@/constants";
 import { parseAsInteger, parseAsString, useQueryStates } from "nuqs";
 
-export const useAgentFilters = () => {
+export const useAgentsFilters = () => {
   return useQueryStates({
     search: parseAsString.withDefault("").withOptions({ clearOnDefault: true }),
     page: parseAsInteger
